@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 2 Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nick Guo">
+    <link rel="icon" href="assets/favicon.ico">
+  </head>
+  <body>
+    <header>
+        <h1>Lab 2 Meeting Minutes</h1>
+        <h2><em>Learning HTML</em></h2>
+        <h3>Meeting Date: April 15, 2024</h3>
+    </header>
+
+    <hr>
+
+    <aside>
+        <section id="attendance">
+        <h3>Attendance</h3>
+        <ul>
+            <li>Nick Guo</li>
+            <li>LeBron James</li>
+            <li>Coby Guo</li>
+        </ul>
+    </aside>
+
+    <nav>
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="agenda">
+            <h3>Agenda</h3>
+            <ol>
+                <li>Use HTML</li>
+                <li>Create meeting minutes</li>
+                <li>Figure out new HTML elements</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Unfinished</h3>
+            <p>We did not complete our roadmap diagram last meeting.</p>
+        </section>
+
+        <section>
+            <h3>New Business</h3>
+            <p>We identified a future <b>priority target</b> for the rest of the quarter: <strong>Learn CSS and JavaScript!</strong></p>
+        </section>
+
+        <div>
+            <h3>Miscellaneous Comments</h3>
+            <p>There were <b>NO</b> <i>other</i> comments, questions or concerns.</p>
+        </div>
+
+        <article>
+            <h3>Diagrams</h3>
+            <img src="assets/diagram.svg" alt="Diagram of meeting" width="300">
+        </article>
+
+        <footer>
+            <details>
+                <summary>Meeting Recordings</summary>
+                <audio controls>
+                    <source src="assets/audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <br>
+
+                <video width="300" controls>
+                    <source src="assets/video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </details>
+        </footer>
+
+    </main>
+
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Comment Box</legend>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="schedule">Schedule Debrief Meeting:</label>
+                <input type="checkbox" id="schedule" name="schedule">
+            </div>
+
+            <div>
+                <label for="review">Satisfied with meeting minutes?:</label>
+                <label>
+                    <input type="radio" name="satisfaction" value="yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="no"> No
+                </label>
+            </div>
+
+            <div>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+
+                <label for="feedback">Topic of Feedback:</label>
+                <select id="feedback" name="feedback">
+                    <option value="agenda">Content</option>
+                    <option value="duration">Teammate</option>
+                    <option value="content">Suggestion</option>
+                    <option value="content">Other</option>
+                </select>
+                
+                <label for="topic">Your favorite topic discussed:</label>
+                <input list="topics" id="topic" name="topic">
+                <datalist id="topics">
+                    <option value="Agenda">
+                    <option value="Unfinished">
+                    <option value="New Business">
+                </select>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <span>End of Document</span>
+  </body>
+</html>
