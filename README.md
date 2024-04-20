@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-https://n-guo.github.io/Lab2_Starter/
+https://n-guo.github.io/sp24-cse110-lab3/
