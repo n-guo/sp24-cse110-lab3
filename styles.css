@@ -1,0 +1,201 @@
+:root {
+    /* CSS Variables */
+    --primary-color: #2e87e6;
+    --secondary-color: #ecbadd;
+    --background-color: #e2b6d4;
+}
+
+/* Class selector */
+.title {
+    color: skyblue;
+    text-decoration: underline;
+    font-family:'Times New Roman', Times, serif
+}
+
+.grid-item {
+    color: color-mix(in lch, rgb(43, 84, 132), pink);
+}
+
+.minutes-body {
+    border-top: 2px solid #ccc;
+    margin-top: 1in;
+    padding-top: 5%; 
+}
+
+/* External Font */
+.jersey-20-regular {
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Universal selector */
+* {
+    font-family: "Jersey 20", sans-serif;
+}
+
+/* ID Selector */
+#attendance {
+    background-image: url(assets/background.jpg);
+  }
+
+/* Selector List*/
+span,
+details {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+/* Element Selector*/
+header {
+    height: 250px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color, blue);
+    padding: 20px;
+    border-bottom: 5px solid var(--secondary-color);
+    border-style: dotted;
+    color: white;
+}
+
+body {
+    position: relative;
+    color: rgb(58, 59, 61);
+}
+
+/* Attribute Selector*/
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/*Descendant combinator*/
+nav ul {
+    font-size: 1.3em;
+}
+
+/* Child Combinator*/
+header > h3 {
+    color: hsl(115, 75%, 50%);
+}
+
+/* General Sibling Combinator */
+h1 ~ h2 {
+    margin-top: 20px;
+}
+
+/* Pseudo Class Selector */
+button:hover, a:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* Adjacent Sibling Combinator */
+label + input {
+    margin-left: 5px;
+}
+
+/*Combining two selectors*/
+button.submit {
+    background-color: green;
+}
+
+/* new has selector */
+nav:has(+ h3) {
+    color: color(colorspace 50 0 100)
+  }
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    nav {
+      display: block;
+    }
+  }
+
+/* Nested Selector*/
+.example {
+    font-family: system-ui;
+    font-size: 1.2rem;
+}
+
+.example > a {
+    color: tomato;
+}
+
+.example > a:hover,
+.example > a:focus {
+    color: ivory;
+    background-color: tomato;
+}
+  
+
+
+
+.note-boxes {
+    min-width: 300px;
+    display: block;
+    width: 75%;
+    padding: 20px;
+}
+
+.note {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Longhand margin example */
+.long-margin {
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+/* Shorthand margin example */
+.short-margin {
+    margin: 20px 15px;
+}
+
+/* Auto margin example for horizontal centering */
+.auto-margin {
+    margin: auto;
+}
+
+/* Longhand padding example */
+.long-padding {
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+}
+
+/* Shorthand padding example */
+.short-padding {
+    padding: 30px 25px;
+}
+
+/* Borders */
+.border-style {
+    border-style: dashed;
+    border-color: #333;
+    border-width: 3px;
+}
+
+
+.display-inline-block {
+    display: inline-block;
+    width: 50%;
+}
