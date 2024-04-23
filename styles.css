@@ -1,0 +1,62 @@
+:root {
+    /* CSS Variables */
+    --primary-color: #2e87e6;
+    --secondary-color: #ecbadd;
+    --background-color: #e2b6d4;
+}
+
+/* Class selector */
+.title {
+    color: skyblue;
+    text-decoration: underline;
+    font-family:'Times New Roman', Times, serif
+}
+
+/* External Font */
+.jersey-20-regular {
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Universal selector */
+* {
+    font-family: "Jersey 20", sans-serif;
+}
+
+/* ID Selector */
+#attendance {
+    background-image: url(assets/background.jpg);
+  }
+
+/* Element Selector*/
+span {
+    background-color: var(--background-color, white);
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color, blue);
+    padding: 20px;
+    border-bottom: 5px solid var(--secondary-color);
+    color: white;
+}
+
+/* Pseudo Class Selector */
+button:hover, a:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    nav {
+      display: block;
+    }
+  }
