@@ -29,15 +29,16 @@
     background-image: url(assets/background.jpg);
   }
 
-/* Element Selector*/
-span {
-    background-color: var(--background-color, white);
+/* Selector List*/
+span,
+details {
     display: block;
     text-align: center;
     margin-top: 20px;
     color: var(--primary-color);
 }
 
+/* Element Selector*/
 header {
     display: flex;
     flex-direction: column;
@@ -45,13 +46,49 @@ header {
     background-color: var(--primary-color, blue);
     padding: 20px;
     border-bottom: 5px solid var(--secondary-color);
+    border-style: dotted;
     color: white;
+}
+
+body {
+    color: rgb(58, 59, 61);
+
+}
+
+/* Attribute Selector*/
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/*Descendant combinator*/
+nav ul {
+    font-size: 1.3em;
+}
+
+/* Child Combinator*/
+header > h3 {
+    color: hsl(115, 75%, 50%);
+}
+
+/* General Sibling Combinator */
+h1 ~ h2 {
+    margin-top: 20px;
 }
 
 /* Pseudo Class Selector */
 button:hover, a:hover {
     background-color: var(--secondary-color);
     color: #fff;
+}
+
+/* Adjacent Sibling Combinator */
+label + input {
+    margin-left: 5px;
 }
 
 /* Responsive Media Queries */
